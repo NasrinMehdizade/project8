@@ -5,27 +5,26 @@
 }
 body {
     height: 100vh;
-    background-color: #202d36;
+    background-color: #fafafa;
 }
 .line-1 {
-    background-color: #2b3743;
-    color: white;
+    background-color: #fff;
+    color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    box-shadow: 1px 3px 9px 2px rgb(0 0 0 / 20%);
+    box-shadow: 1px 3px 5px 2px rgb(0 0 0 / 10%);
 }
 .line-1 h2.left {
     margin-top: 5px;
     margin-left: 5.76%;
 }
 .line-1 h2.right {
-    font-size: 20px;
     margin-top: 5px;
     margin-right:5.76%;
 }
 .line-2 {
-    color: white;
+    color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,10 +34,11 @@ body {
 }
 .line-2 input {
     padding: 10px;
-    background-color: #2b3743;
+    background-color: #fff;
     border-radius: 2px;
+    padding-right: 150px;
     border: none;
-    box-shadow: 1px 3px 9px 2px rgb(0 0 0 / 20%);
+    box-shadow: 1px 3px 5px 2px rgb(0 0 0 / 10%);
     margin-left: 5.76%;
     cursor: pointer;
     caret-color: white;
@@ -49,10 +49,10 @@ body {
 .line-2 select {
     padding: 10px;
     color: #a2abb4;
-    background-color: #2b3743;
+    background-color: #fff;
     border-radius: 2px;
     border: none;
-    box-shadow: 1px 3px 9px 2px rgb(0 0 0 / 20%); 
+    box-shadow: 1px 3px 5px 2px rgb(0 0 0 / 10%); 
     margin-right: 5.76%;
     cursor: pointer;
 }
@@ -72,9 +72,9 @@ body {
 .box {
     width: 18%;
     height: 38vh;
-    background-color: #2b3743;
+    background-color: #ffff;
     border-radius: 10px;
-    box-shadow: 1px 3px 9px 2px rgb(0 0 0 / 20%);
+    box-shadow: 1px 3px 5px 2px rgb(0 0 0 / 10%);
 }
 .img {
     height: 50%;
@@ -87,7 +87,7 @@ body {
 }
 .box .text h2 {
     font-size: 14px;
-    color: #c0c9d2;
+    color: black;
     margin-top: 5px;
     margin-left: 10px;
 }
@@ -101,13 +101,5 @@ body {
     font-weight: bold;
 }
 @media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        margin-top: 20px;
-    }
-    .box {
-        width: 80%;
-        height: 100vh;
-    }
+
 }
