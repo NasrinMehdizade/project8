@@ -9,28 +9,21 @@ body {
 }
 .line-1 {
     background-color: #2b3743;
+    box-shadow: 1px 3px 9px 2px rgb(0 0 0 / 20%);
+}
+.line-1 .container {
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    box-shadow: 1px 3px 9px 2px rgb(0 0 0 / 20%);
-}
-.line-1 h2.left {
-    margin-top: 5px;
-    margin-left: 5.76%;
-}
-.line-1 h2.right {
-    font-size: 20px;
-    margin-top: 5px;
-    margin-right:5.76%;
 }
 .line-2 {
     color: white;
+}
+.line-2 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10PX;
     margin-top: 15px;
 }
 .line-2 input {
@@ -39,7 +32,6 @@ body {
     border-radius: 2px;
     border: none;
     box-shadow: 1px 3px 9px 2px rgb(0 0 0 / 20%);
-    margin-left: 5.76%;
     cursor: pointer;
     caret-color: white;
 }
@@ -53,25 +45,31 @@ body {
     border-radius: 2px;
     border: none;
     box-shadow: 1px 3px 9px 2px rgb(0 0 0 / 20%); 
-    margin-right: 5.76%;
     cursor: pointer;
 }
 .line-2 select:focus {
     outline: none;
 }
 .container{
+    margin-left: 5.5%;
+    margin-right: 5.5%;
+}
+.main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 5%;
+    gap: 6%;
     height: 80%;
     margin-top: 20px;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
 }
 .box {
-    width: 18%;
-    height: 38vh;
+    width: 20%;
+    height: auto;
+    min-height: 38vh;
     background-color: #2b3743;
     border-radius: 10px;
     box-shadow: 1px 3px 9px 2px rgb(0 0 0 / 20%);
@@ -107,7 +105,28 @@ body {
         margin-top: 20px;
     }
     .box {
-        width: 80%;
-        height: 100vh;
+        width: 100%;
+        height: 80vh;
+    }
+    .box .text h2.h2 {
+        font-size: 30px;
+    }
+    .box .text h2 {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .line-1 .container {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .line-1 .container {
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .line-1 .container {
+        font-size: 10px;
     }
 }
